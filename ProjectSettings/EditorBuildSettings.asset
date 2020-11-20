@@ -6,30 +6,123 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/GamesMenu.unity
+    guid: f216e1eb489f58b4b8c0b5597313e2fe
+  - enabled: 1
+    path: Assets/Scenes/Game1/MainMenu.unity
     guid: 97be06d22656a19459b65c653aca94ea
   - enabled: 1
-    path: Assets/Scenes/LevelSelect.unity
+    path: Assets/Scenes/Game1/LevelSelect.unity
     guid: 74832a9ecace777408e133b4aab81bff
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
+    path: Assets/Scenes/Game1/Level1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Level2.unity
+    path: Assets/Scenes/Game1/Level2.unity
     guid: dde7774e015667d48a9df341ea84cbf3
   - enabled: 1
-    path: Assets/Scenes/Level3.unity
+    path: Assets/Scenes/Game1/Level3.unity
     guid: 152eb1fa6e554c24a8300a048e4b2e34
   - enabled: 1
-    path: Assets/Scenes/Level4.unity
+    path: Assets/Scenes/Game1/Level4.unity
     guid: 0249f8af004f66342b79299ba66e8735
   - enabled: 1
-    path: Assets/Scenes/Level5.unity
+    path: Assets/Scenes/Game1/Level5.unity
     guid: d3f6ee14d8f785348bb78627d62cdb5e
   - enabled: 1
-    path: Assets/Scenes/Level6.unity
+    path: Assets/Scenes/Game1/Level6.unity
     guid: 86b1e57b09486324aa003bb0c6f41d1e
   - enabled: 1
-    path: Assets/Scenes/Level7.unity
+    path: Assets/Scenes/Game1/Level7.unity
     guid: eda606e33a5064a4d8fd6fa814dbd47d
+  - enabled: 1
+    path: Assets/Scenes/Game2/SecondMainMenu.unity
+    guid: 40e2449f01722684180c116801220eb1
+  - enabled: 1
+    path: Assets/Scenes/Game2/SecondLevelSelect.unity
+    guid: a25fd064dc8c16943b7f41041dee9a13
+  - enabled: 1
+    path: Assets/Scenes/Game2/SecondLevel1.unity
+    guid: 512e07bd513656948aac53d4a80ba575
+  - enabled: 1
+    path: Assets/Scenes/Game2/SecondLevel2.unity
+    guid: 17de0cfdd8885104b8f67d967fae6f79
+  - enabled: 1
+    path: Assets/Scenes/Game2/SecondLevel3.unity
+    guid: ef7212902a4602941a060f02587218f7
+  - enabled: 1
+    path: Assets/Scenes/Game2/SecondLevel4.unity
+    guid: ddfda75d9bca9aa409af56453405dc87
+  - enabled: 1
+    path: Assets/Scenes/Game2/SecondLevel5.unity
+    guid: 6eded98393e0bf84590e57aaa22ffce8
+  - enabled: 1
+    path: Assets/Scenes/Game2/SecondLevel6.unity
+    guid: 9666808e2de97c745916ffecffffbe41
+  - enabled: 1
+    path: Assets/Scenes/Game2/SecondLevel7.unity
+    guid: 459f43883f0d36941a3be8430d84fc51
+  - enabled: 1
+    path: Assets/Scenes/Game3/ThirdMainMenu.unity
+    guid: 5b401ea888d4957408ba8dd275410aea
+  - enabled: 1
+    path: Assets/Scenes/Game3/ThirdLevelSelect.unity
+    guid: 787c0dd43e83e8547bd8bcf415f83772
+  - enabled: 1
+    path: Assets/Scenes/Game3/ThirdLevel1.unity
+    guid: 846b73af3f2225646810f9d5be458f45
+  - enabled: 1
+    path: Assets/Scenes/Game3/ThirdLevel2.unity
+    guid: 0e6e682d0a5d5504ca5bcc2943ca1464
+  - enabled: 1
+    path: Assets/Scenes/Game3/ThirdLevel3.unity
+    guid: b0229d360ecbedc42b472bcc039e9634
+  - enabled: 1
+    path: Assets/Scenes/Game3/ThirdLevel4.unity
+    guid: 73592c9eba64c48488119b3ff8884833
+  - enabled: 1
+    path: Assets/Scenes/Game3/ThirdLevel5.unity
+    guid: 86bc3ad353e12b248afd155a37c12efe
+  - enabled: 1
+    path: Assets/Scenes/Game3/ThirdLevel6.unity
+    guid: 437a6ced9ed857d4e969a42c2cc7d179
+  - enabled: 1
+    path: Assets/Scenes/Game3/ThirdLevel7.unity
+    guid: ed0a63d2224224e479ea74c91926f309
+  - enabled: 1
+    path: Assets/Scenes/Game4/FourthMainMenu.unity
+    guid: f6e5493e842215b44a3298ace72325af
+  - enabled: 1
+    path: Assets/Scenes/Game4/FourthLevelSelect.unity
+    guid: 1b24f4c0536749048a042be9fe4b0c11
+  - enabled: 1
+    path: Assets/Scenes/Game4/FourthLevel1.unity
+    guid: d4e73365801cdfa428fc4df5f85e5cdc
+  - enabled: 1
+    path: Assets/Scenes/Game4/FourthLevel2.unity
+    guid: c026b10d375e12f429c55e023468b5ec
+  - enabled: 1
+    path: Assets/Scenes/Game4/FourthLevel3.unity
+    guid: 2b278a062749e934aa4da01e55745a83
+  - enabled: 1
+    path: Assets/Scenes/Game4/FourthLevel4.unity
+    guid: ebf928870a762f24fb63d06f37fc3d02
+  - enabled: 1
+    path: Assets/Scenes/Game4/FourthLevel5.unity
+    guid: 3db0fcf41686b8b4ebef5250df55ae80
+  - enabled: 1
+    path: Assets/Scenes/Game4/FourthLevel6.unity
+    guid: c7c987086ad51a241932c922f29e3779
+  - enabled: 1
+    path: Assets/Scenes/Game4/FourthLevel7.unity
+    guid: 504427b70ee314644a66afc34c52dd53
+  - enabled: 1
+    path: Assets/Scenes/Game5/FifthMainMenu.unity
+    guid: 41888cd1fa031704f9bcc07b57e61ae3
+  - enabled: 1
+    path: Assets/Scenes/Game5/FifthLevelSelect.unity
+    guid: 2532200e6c6ca66459988dd5364b44fc
+  - enabled: 1
+    path: Assets/Scenes/Game5/FifthLevel1.unity
+    guid: 2e53bbc701095504d96aec1b09d5f7ab
   m_configObjects: {}

@@ -21,6 +21,16 @@ public class MenuSounds : MonoBehaviour
     }
 
     public void LevelSelect() {
-        SceneManager.LoadScene("LevelSelect");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+    }
+
+    public void QuitGame() {
+        SubmitToDb.instance.OnApplicationQuit();
+        Application.Quit();
+    }
+
+    public void BackToMenu() {
+        SubmitToDb.instance.OnApplicationQuit();
+        SceneManager.LoadScene("GamesMenu");
     }
 }
