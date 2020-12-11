@@ -16,9 +16,7 @@ public class InfoSubmit : MonoBehaviour
 {
     public static InfoSubmit instance;
 
-
-    public TMP_InputField firstName;
-    public TMP_InputField lastName;
+    public TMP_Dropdown dropdown;
     public TMP_InputField classroom;
     public TMP_InputField age;
     public TMP_InputField school;
@@ -67,8 +65,8 @@ public class InfoSubmit : MonoBehaviour
         
         //WEBGL
         string option = "save";
-        string data = "{ \"firstName\":\"" + firstName.text.ToString() + "\"," + "\"lastName\":\"" + lastName.text.ToString() + "\"," + "\"classroom\":\"" + classroom.text.ToString() + "\"," + "\"age\":\"" + age.text.ToString() + "\"," + "\"school\":\"" + school.text.ToString() + "\"," + "\"city\":\"" + city.text.ToString() + "\","+game+":{\"levelReached\":\"" + "0" + "\"," +  "\"firstScore\":\"" + "0" + "\"," + "\"hasPlayed\":\"" + "0" + "\"," + "\"TimePlayed\":\"" + "0" + "\"}}";
-        
+        string data = "{ " + "\"classroom\":\"" + dropdown.captionText.text.ToString() + "\"," + "\"age\":\"" + age.text.ToString() + "\"," + "\"school\":\"" + school.text.ToString() + "\"," + "\"city\":\"" + city.text.ToString() + "\","+game+":{\"levelReached\":\"" + "0" + "\"," +  "\"firstScore\":\"" + "0" + "\"," + "\"hasPlayed\":\"" + "0" + "\"," + "\"TimePlayed\":\"" + "0" + "\"}}";
+        PlayerPrefs.SetString("classroom", dropdown.captionText.text.ToString());
         dataa = "{\"option\":\"" + option + "\",\"username\":\"" + username + "\"," + "\"game\":" + game + ",\"data\":" + data + "}";
         Debug.Log(dataa);
         StartCoroutine(Upload());

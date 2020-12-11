@@ -39,6 +39,7 @@ public class FifthGameManager : MonoBehaviour
     int checkNextLevel;
     string sceneName;
     int won = 0;
+    bool lost = false;
     // bool moveTowards = false;
     
     public AudioClip wrong;
@@ -54,7 +55,7 @@ public class FifthGameManager : MonoBehaviour
 
     AudioSource audio;
     Image fade;
-    Color brown = new Color(165f/255f,42f/255f,42f/255f,1f);
+    Color brown = new Color(114f/255f,58f/255f,21f/255f,1f);
 
     public MultiDimensionalInt[] planetsGroups;
     // Vector2 toGo;
@@ -109,29 +110,41 @@ public class FifthGameManager : MonoBehaviour
         // audio.PlayOneShot(chooseShapes);
         yield return new WaitForSeconds(2f);
         for (int i = 0; i < planetsGroups.Length; i++) {
+            if(lost) {
+                break;
+            }
             for(int j = 0; j < planetsGroups[i].imageArray.Length; j++) {
+                if(lost) {
+                    break;
+                }
                 if(j==0) {
-                    planetsGroups[i].imageArray[j].CrossFadeColor(Color.yellow, 1f, true, true);
+                    planetsGroups[i].imageArray[j].CrossFadeColor(brown, 1f, true, true);
                 }
                 else {
-                    planetsGroups[i].imageArray[j].CrossFadeColor(brown, 1f, true, true);
+                    planetsGroups[i].imageArray[j].CrossFadeColor(Color.yellow, 1f, true, true);
                 }
                 StartCoroutine(IncreaseScale(planetsGroups[i].imageArray[j],i+1));
             }
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(1f);
         }
     }
 
     IEnumerator IncreaseScale (Image image, int check) {
-        Debug.Log("increase");
         Vector3 originalScale = image.transform.localScale;
-        Vector3 destinationScale = new Vector3(2.0f, 2.0f, 1.0f);
+        Vector3 destinationScale = new Vector3(1.7f, 1.7f, 1.0f);
         float currentTime = 0.0f;
+        float time = 0.0f;
+        if(sceneName!="FifthLevel6" && sceneName!="FifthLevel7") {
+            time = 1.1f;
+        }
+        else {
+            time = 1.5f;
+        }
         do {
-            image.transform.localScale = Vector3.Lerp(originalScale, destinationScale, currentTime/0.8f);
+            image.transform.localScale = Vector3.Lerp(originalScale, destinationScale, currentTime/time);
             currentTime += Time.deltaTime;
             yield return null;
-         } while (currentTime <= 0.8f);
+         } while (currentTime <= time);
 		if(won!=check) {
             Wrong();
         }
@@ -139,6 +152,7 @@ public class FifthGameManager : MonoBehaviour
 	}
 
     public void Wrong() {
+        lost = true;
         audio.PlayOneShot(wrong);
         // hearts[checkRestart].enabled = false;
         checkRestart++;
@@ -150,6 +164,9 @@ public class FifthGameManager : MonoBehaviour
     }
 
     public void Right() {
+        if(lost) {
+            return;
+        }
         audio.PlayOneShot(right);
         GameObject btnGM = EventSystem.current.currentSelectedGameObject;
         btnGM.GetComponent<Button>().interactable = false;
@@ -260,15 +277,15 @@ public class FifthGameManager : MonoBehaviour
 
     IEnumerator Upload()
     {
-        Debug.Log("Fake Upload");
-        yield return new WaitForSeconds(1);
-        // var request = new UnityWebRequest(url, "POST");
-        // byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(dataa);
-        // request.uploadHandler = (UploadHandler)new UploadHandlerRaw(bodyRaw);
-        // request.downloadHandler = (DownloadHandler)new DownloadHandlerBuffer();
-        // request.SetRequestHeader("Content-Type", "application/json");
-        // yield return request.SendWebRequest();
-        // Debug.Log("Status Code: " + request.responseCode);
-        // Debug.Log("Status body: " + request.downloadHandler.text);
+        // Debug.Log("Fake Upload");
+        // yield return new WaitForSeconds(1);
+        var request = new UnityWebRequest(url, "POST");
+        byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(dataa);
+        request.uploadHandler = (UploadHandler)new UploadHandlerRaw(bodyRaw);
+        request.downloadHandler = (DownloadHandler)new DownloadHandlerBuffer();
+        request.SetRequestHeader("Content-Type", "application/json");
+        yield return request.SendWebRequest();
+        Debug.Log("Status Code: " + request.responseCode);
+        Debug.Log("Status body: " + request.downloadHandler.text);
     }
 }

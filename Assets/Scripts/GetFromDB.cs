@@ -73,7 +73,8 @@ public class GetFromDB : MonoBehaviour
         // loadData();
 
         //WEBGL
-        CheckHere();
+        // CheckHere();
+        StartCoroutine(Upload());
     }
 
     private void CheckHere() {
@@ -107,7 +108,7 @@ public class GetFromDB : MonoBehaviour
         if(checkPlay==true)
             return;
 
-        StartCoroutine(Upload());
+        // StartCoroutine(Upload());
     }
 
     // public void loadData() {
@@ -262,7 +263,7 @@ public class GetFromDB : MonoBehaviour
         {
             storeValuesMenu.SetActive(true);
         }
-        yield return new WaitForSeconds(2f);
+        // yield return new WaitForSeconds(2f);
         CheckHere();
     }
 

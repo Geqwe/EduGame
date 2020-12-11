@@ -125,4 +125,79 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game5/FifthLevel1.unity
     guid: 2e53bbc701095504d96aec1b09d5f7ab
+  - enabled: 1
+    path: Assets/Scenes/Game5/FifthLevel2.unity
+    guid: 6c6a4edebaac73748b80ebc57ce2a446
+  - enabled: 1
+    path: Assets/Scenes/Game5/FifthLevel3.unity
+    guid: 016ce4a830afc1246b1ad6855b8818ab
+  - enabled: 1
+    path: Assets/Scenes/Game5/FifthLevel4.unity
+    guid: 33b1bfa71056df249aed3fbecc89d8ab
+  - enabled: 1
+    path: Assets/Scenes/Game5/FifthLevel5.unity
+    guid: 1644796fe21497d47986d7b3e94dfaff
+  - enabled: 1
+    path: Assets/Scenes/Game5/FifthLevel6.unity
+    guid: 851d4455426dca94f9959e3de54d190d
+  - enabled: 1
+    path: Assets/Scenes/Game5/FifthLevel7.unity
+    guid: 9a77875097d3b4b48902f8e8f21870fe
+  - enabled: 1
+    path: Assets/Scenes/Game6/SixthMainMenu.unity
+    guid: 19090ad4328042641a0dceb07954ae77
+  - enabled: 1
+    path: Assets/Scenes/Game6/SixthLevelSelectFirst.unity
+    guid: 28252eccb3dc06b4f8c7d074cd2cfbec
+  - enabled: 1
+    path: Assets/Scenes/Game6/SixthLevelSelectSecond.unity
+    guid: 5efedb6f497b31846befdc61d3838d15
+  - enabled: 1
+    path: Assets/Scenes/Game6/SixthLevel1.unity
+    guid: d9d37de61fbcc214eace6b1b9d8d85e7
+  - enabled: 1
+    path: Assets/Scenes/Game6/SixthLevel2.unity
+    guid: e8859b3bf823cc84e974fb680e968ae2
+  - enabled: 1
+    path: Assets/Scenes/Game6/SixthLevel3.unity
+    guid: 168a833436bdcfb44aa5ebf3d7d6d4db
+  - enabled: 1
+    path: Assets/Scenes/Game6/SixthLevel4.unity
+    guid: 150d7b4c79b26654bba0142c98a972d5
+  - enabled: 1
+    path: Assets/Scenes/Game6/SixthLevel5.unity
+    guid: 60f7cb532de65dc40a892969d3b55862
+  - enabled: 1
+    path: Assets/Scenes/Game6/SixthLevel6.unity
+    guid: f1f253aaba249a24a93e575c70af0e7f
+  - enabled: 1
+    path: Assets/Scenes/Game6/SixthLevel7.unity
+    guid: 983dcd20cd13ac140b4b2ecc7b9aaa1e
+  - enabled: 1
+    path: Assets/Scenes/Game7/SeventhMainMenu.unity
+    guid: 29ed425a2b7843345bd81391e72393bf
+  - enabled: 1
+    path: Assets/Scenes/Game7/SeventhLevelSelect.unity
+    guid: 28aacb3ce7afd3c4eb350d215d5e8970
+  - enabled: 1
+    path: Assets/Scenes/Game7/SeventhLevel1.unity
+    guid: de7c318d07034274fb898b99cf7ee17a
+  - enabled: 1
+    path: Assets/Scenes/Game7/SeventhLevel2.unity
+    guid: ab9334d4c163feb418a34916e85b74c1
+  - enabled: 1
+    path: Assets/Scenes/Game7/SeventhLevel3.unity
+    guid: 65e2374d7bf022042b90dc889381ceca
+  - enabled: 1
+    path: Assets/Scenes/Game7/SeventhLevel4.unity
+    guid: ddaed44f102660e45bcc63d4efb0c80a
+  - enabled: 1
+    path: Assets/Scenes/Game7/SeventhLevel5.unity
+    guid: 8c481464c6a6a394184036dd6b3f5d4d
+  - enabled: 1
+    path: Assets/Scenes/Game7/SeventhLevel6.unity
+    guid: 124ddde74ecdcb64db05ecfd04e80838
+  - enabled: 1
+    path: Assets/Scenes/Game7/SeventhLevel7.unity
+    guid: 03ec50f7c48ac79479a2ac23b995f28f
   m_configObjects: {}

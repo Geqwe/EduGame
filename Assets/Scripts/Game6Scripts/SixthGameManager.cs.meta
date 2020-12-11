@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 33ed4ec1eebf57e4599e78ed0db20d21
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - canvasGroup: {instanceID: 0}
+  - failureMenu: {instanceID: 0}
+  - successMenu: {instanceID: 0}
+  - fadeGM: {instanceID: 0}
+  - helpMenu: {instanceID: 0}
+  - wrong: {instanceID: 0}
+  - right: {instanceID: 0}
+  - success: {instanceID: 0}
+  - failure: {instanceID: 0}
+  - dissolve: {instanceID: 0}
+  - successVoice: {fileID: 8300000, guid: 1e5812602f8664143a0f3a6999ffebb8, type: 3}
+  - failureVoice: {fileID: 8300000, guid: ecc9ec2ab740f224b97663aa4b09314d, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

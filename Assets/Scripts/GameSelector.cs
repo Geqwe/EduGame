@@ -18,7 +18,7 @@ public class GameSelector : MonoBehaviour
         audio = GetComponent<AudioSource>();
         audio.PlayOneShot(startLevel);
         fade.enabled = false;
-        for (int i = 4; i < levelButtons.Length; i++) {
+        for (int i = 7; i < levelButtons.Length; i++) {
             levelButtons[i].interactable = false;
         }
     }
